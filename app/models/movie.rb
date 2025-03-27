@@ -9,5 +9,9 @@
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #
+# app/models/movie.rb
+
 class Movie < ApplicationRecord
+  validates :title, presence: true, uniqueness: true
+  validates :description, presence: true
 end

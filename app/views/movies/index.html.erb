@@ -11,39 +11,10 @@
 <div>
   <div>
     <h2>
-      Add a new movie
+      <a href="/movies/new">New movie</a>
     </h2>
 
-    <form action="/movies" method="post" data-turbo="false">
-      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-      <div>
-        <label for="title_box">
-          Title
-        </label>
 
-        <input type="text" id="title_box" name="title">
-      </div>
-
-      <div>
-        <label for="description_box">
-          Description
-        </label>
-
-        <input type="text" id="description_box" name="description">
-      </div>
-
-      <div>
-        <label for="released_box">
-          Released
-        </label>
-
-        <input type="text" id="released_box" name="released">
-      </div>
-
-      <button>
-        Create movie
-      </button>
-    </form>
   </div>
 </div>
 
